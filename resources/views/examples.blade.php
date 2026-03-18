@@ -23,7 +23,7 @@
 
     <hr class="my-4">
 
-    <div class="grid grid-cols-2 sm:grid-cols3 gap-4">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
         <x-nav.card
         img="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?"
         date="Septiembre, 2002"
@@ -65,6 +65,18 @@
         title="Lorem inpsum dolor sit amet, consetetur"
         content="Lorem inpsum dolor sit amet, consetetur....Lorem inpsum dolor sit amet, consetetur"
         ></x-nav.card>
+    </div>
+
+    <hr class="my-4">
+
+    
+
+    <hr class="my-4">
+    <div>
+        <x-youtube class="grid grid-cols-2 sm:grid-cols-3 gap-4" url="https://www.youtube.com/embed/pstLUPrZtYw?si=Vw23WcRqH386gcYq"></x-youtube>
+        <x-youtube  class="grid grid-cols-2 sm:grid-cols-3 gap-4" url="https://www.youtube.com/embed/-hgg4V7Xulg?si=N7zjz7xKN0SfSwAW"></x-youtube>
+        <x-youtube  class="grid grid-cols-2 sm:grid-cols-3 gap-4" url="https://www.youtube.com/embed/lVzyjZEKgdU?si=haWI2FD1BiaN9cQ1"></x-youtube>
+        <x-youtube  class="grid grid-cols-2 sm:grid-cols-3 gap-4" url="https://www.youtube.com/embed/2pfnm2YFbSQ?si=EfC8fEJsXyS-VzlT"></x-youtube>
     </div>
 </div>
 
