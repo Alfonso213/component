@@ -1,6 +1,12 @@
 @extends('template')
 
 @section('contenido')
+<x-nav class="mb-4">
+    <xnav.link href="#">Ejemplos</xnav.link>
+    <xnav.link href="#">Documentación</xnav.link>
+    <xnav.link href="#">Soporte</xnav.link>
+</x-nav>
+
 <div class="container mx-auto px-4">
     <h1 class="text-3xl">
         Listado de Ejemplos
