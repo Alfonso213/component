@@ -1,21 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+@extends('template')
+ @section('title', 'Register')
+@section('contenido')
+<x-wrapper>
+    <x-slot name="tittle">Registro de usuario</x-slot>
+            <form action="">
+                <div>
+                    <x-label>Nombre</x-label>
+                    <x-input type="text" name="Nombre"/>
+                </div>
+                <div>
+                    <x-label>Apellidos</x-label>
+                    <x-input type="text" name="lastname"/>
+                </div>
+                <div>
+                    <x-label>Email</x-label>
+                    <x-input type="text" name="email"/>
+                </div>
+                <div>
+                    <x-label>Fecha de nacimiento</x-label>
+                    <x-input type="date" name="birthdate"/>
+                </div>
+                <div>
+                    <x-label>Contraseña</x-label>
+                    <x-input type="password" name="password"/>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <div class="h-screen flex  flex-col items-center justify-center bg-green-200">
-        <h1 class="mb-6 text-2xl">
-            Crear cuenta.
-        </h1>
-        <div class="w-full sm:max-w-md py-4 px-6 bg-white shadow sm:rounded">
-            
-        </div>
-    </div>
-</body>
-</html>
+                <div class="flex items-center gap-4 justify-end mt-8">
+                   <x-link href="/login">
+                        Iniciar Sesion
+                    </x-link>
+                    <x-button>Registrarse</x-button>
+                </div>
+            </form>
+</x-wrapper>
+@endsection
